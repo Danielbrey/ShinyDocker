@@ -22,8 +22,6 @@ RUN R -e "install.packages('plotly', repos='http://cran.rstudio.com/')"
 # copy the app to the image
 COPY SNABasicsShiny.Rproj /srv/shiny-server/
 COPY app.R /srv/shiny-server/
-COPY R /srv/shiny-server/R
-COPY data /srv/shiny-server/data
 # select port
 EXPOSE 3838
 # allow permission
